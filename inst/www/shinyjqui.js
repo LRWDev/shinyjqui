@@ -102,13 +102,6 @@ shinyjqui = function() {
       return e;
     });
 
-    console.log('===================');
-    console.log('ELEMENTS: ');
-    console.log($els);
-    console.log('MSG: ');
-    console.log(msg);
-    console.log('===================');
-
     return {
       elements    : $els,
       type        : msg.type,
@@ -672,7 +665,11 @@ shinyjqui = function() {
     // if el is or part of a shiny tag element, return the shiny id
     getId : function(el) {
 
-      var id = $(el).attr('id');
+      // Because of a bug between the interaction of shinyjqui and shinydashboardPlus, sometimes
+      // sortable items that are deleted get an ID that shouldn't exist, which breaks ability of
+      // retrieving the sortable items. In sortableTable we manually add a class to ignore the ID
+      // to overcome this problem.
+      var id = $(el).hasClass("ignoreid") ? "" : $(el).attr('id');
 
       // tabsetInput
       if((!id) && $(el).hasClass('tabbable')) {

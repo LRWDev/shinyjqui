@@ -1,12 +1,13 @@
 Package: shinyjqui
 Type: Package
 Title: 'jQuery UI' Interactions and Effects for Shiny
-Version: 0.3.2
+Version: 0.3.2.1
 Authors@R: person("Yang", "Tang", email = "tang_yang@outlook.com",
   role = c("aut", "cre"))
 Maintainer: Yang Tang <tang_yang@outlook.com>
 Description: An extension to shiny that brings interactions and animation effects from
-    'jQuery UI' library.
+    'jQuery UI' library. This is a branch off version 0.3.2 that fixes a problem with
+    sortableTable and removes a lot of unnecessary JavaScript console messages.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
