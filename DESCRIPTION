@@ -23,8 +23,8 @@ Suggests:
     highcharter,
     knitr,
     rmarkdown
-URL: https://github.com/yang-tang/shinyjqui
-BugReports: https://github.com/yang-tang/shinyjqui/issues
+URL: https://github.com/daattali/shinyjqui
+BugReports: https://github.com/daattali/shinyjqui/issues
 RoxygenNote: 6.0.1
 Roxygen: list(markdown = TRUE)
 VignetteBuilder: knitr

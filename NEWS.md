@@ -1,3 +1,8 @@
+## shinyjqui 0.3.2.1
+
+* Fix issue with sortableTable
+* Remove JavaScript console messages
+
 ## shinyjqui 0.3.2
 
 * __Bug fix:__ The interaction functions were not working in `ui` mode when the `ui` has an id with spaces.
